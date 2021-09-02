@@ -30,13 +30,13 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run crawler with Python
       run: |
-        python crawler_t1.py
+        python crawler.py
       working-directory: ./UpbitTest
     - name: Commits
       run: |
         git config --local user.email "hyemin2060@naver.com"
         git config --local user.name "hyemin-Kim"
-        git add ./UpbitTest/upbit_data_t1.json
+        git add ./UpbitTest/upbit_data.json
         git commit -m "Auto - Update data"
     - name: Push
       uses: ad-m/github-push-action@master
