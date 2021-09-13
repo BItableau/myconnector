@@ -4,9 +4,9 @@
 name: Econ Index_Loop
 
 on:
-  workflow_dispatch: 
-#  schedule: 
-#    - cron: '0 18 * * *'  # 한국 시간 매일 새벽 3:00 Data Update workflow 실행 요청 전송됨 (실제 workflow 실행 시간은 요청된 후 20min ~ 1h 정도임 -- delay 존재) 
+#  workflow_dispatch: 
+  schedule: 
+    - cron: '0 18 * * *'  # 한국 시간 매일 새벽 3:00 Data Update workflow 실행 요청 전송됨 (실제 workflow 실행 시간은 요청된 후 20min ~ 1h 정도임 -- delay 존재) 
   
 jobs:
   build:
