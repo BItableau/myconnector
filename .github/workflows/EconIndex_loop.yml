@@ -30,7 +30,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run crawler with Python
       run: |
-        python C_GetIndex.py
+        python C_GetIndex_loop.py
       working-directory: ./EconIndex
     - name: Commits
       run: |
